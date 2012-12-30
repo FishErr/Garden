@@ -47,7 +47,7 @@ $Definition['About'] = 'Профайл участника';
 $Definition['Action'] = 'Действия [?]';
 $Definition['Activate'] = 'Активированный';
 $Definition['Active Users'] = 'Активные пользователи';
-$Definition['Activity'] = 'Прямой эфир';
+$Definition['Activity'] = 'Стена';
 $Definition['Activity.BookmarkComment.FullHeadline'] = '%1$s комментирует вашу %8$s.';
 $Definition['Activity.BookmarkComment.ProfileHeadline'] = '%1$s комментирует вашу %8$s.';
 $Definition['Activity.Comment'] = 'Комментировать';
@@ -961,4 +961,17 @@ $Definition['Advanced Stuff'] = 'Продвинутые штуковины';
 $Definition['Embed your community forum into your website to increase engagement...'] = 'Добавь форум на свой сайт, для повышения количества участников';
 $Definition['Embed your forum in your web site'] = 'Добавление форума на твой сайт';
 
-?>
+
+
+$Definition['Add a Profile Picture'] = 'Добавить аватар';
+$Definition['Edit Profile'] = 'Редактировать профиль';
+$Definition['Home'] = 'Главная';
+$Definition['Recent Discussions'] = 'Последние обсуждения';
+$Definition['New Discussion'] = 'Новое обсуждение';
+$Definition['Add a Message'] = 'Добавить сообщение';
+$Definition['Add a Message'] = 'Добавить сообщение';
+
+
+
+
+
