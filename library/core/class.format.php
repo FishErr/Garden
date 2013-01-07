@@ -481,9 +481,15 @@ class Gdn_Format {
          if (!isset($GuestHourOffset)) {
             $GuestTimeZone = C('Garden.GuestTimeZone');
             if ($GuestTimeZone) {
-               $TimeZone = new DateTimeZone($GuestTimeZone);
-               $Offset = $TimeZone->getOffset(new DateTime('now', new DateTimeZone('UTC')));
-               $GuestHourOffset = floor($Offset / 3600);
+               try {
+                  $TimeZone = new DateTimeZone($GuestTimeZone);
+                  $Offset = $TimeZone->getOffset(new DateTime('now', new DateTimeZone('UTC')));
+                  $GuestHourOffset = floor($Offset / 3600);
+               } catch (Exception $Ex) {
+                  $GuestHourOffset = 0;
+                  // Do nothing, but don't set the timezone.
+                  LogException($Ex);
+               }
             }
          }
          $HourOffset = $GuestHourOffset;
@@ -1389,9 +1395,14 @@ EOT;
          if (!isset($GuestHourOffset)) {
             $GuestTimeZone = C('Garden.GuestTimeZone');
             if ($GuestTimeZone) {
-               $TimeZone = new DateTimeZone($GuestTimeZone);
-               $Offset = $TimeZone->getOffset(new DateTime('now', new DateTimeZone('UTC')));
-               $GuestHourOffset = floor($Offset / 3600);
+               try {
+                  $TimeZone = new DateTimeZone($GuestTimeZone);
+                  $Offset = $TimeZone->getOffset(new DateTime('now', new DateTimeZone('UTC')));
+                  $GuestHourOffset = floor($Offset / 3600);
+               } catch (Exception $Ex) {
+                  $GuestHourOffset = 0;
+                  LogException($Ex);
+               }
             }
          }
          $HourOffset = $GuestHourOffset;
