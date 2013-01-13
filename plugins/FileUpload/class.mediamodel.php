@@ -55,7 +55,7 @@ class MediaModel extends VanillaModel {
    
    public function PreloadDiscussionMedia($DiscussionID, $CommentIDList) {
       $this->FireEvent('BeforePreloadDiscussionMedia');
-      
+
       $StartT = microtime(true);
       $Data = $this->SQL
          ->Select('m.*')
@@ -66,7 +66,7 @@ class MediaModel extends VanillaModel {
          ->EndWhereGroup()
          ->OrOp()
          ->BeginWhereGroup()
-            ->WhereIn('m.ForeignID', $CommentIDList)
+           // ->WhereIn('m.ForeignID', $CommentIDList)
             ->Where('m.ForeignTable', 'comment')
          ->EndWhereGroup()
          ->Get();
@@ -164,12 +164,26 @@ class MediaModel extends VanillaModel {
       return $Width;
    }
 
+   private static function getFileTypeIco($Media){
+       $type =  GetValue('Type', $Media);
+
+       switch ($type) {
+           case 'application/zip' :
+               $ico = '/pdf.png';
+               break;
+           default :
+               $ico = 'file-small.png';
+       }
+
+       return '/plugins/FileUpload/images/filetypes/32px/' . $ico;
+   }
+
    public static function ThumbnailUrl($Media) {
       $Width = GetValue('ImageWidth', $Media);
       $Height = GetValue('ImageHeight', $Media);
 
       if (!$Width || !$Height)
-         return '/plugins/FileUpload/images/file.png';
+         return self::getFileTypeIco($Media);
 
       $RequiresThumbnail = FALSE;
       if (self::ThumbnailHeight() && $Height > self::ThumbnailHeight())

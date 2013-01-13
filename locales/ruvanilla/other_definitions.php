@@ -824,7 +824,7 @@ $Definition['You can always use your password at<a href="%1$s">%1$s</a>.'] = 'В
 $Definition['You can make the categories page your homepage.'] = 'Страницы категорий можно установить в качестве главной страницы <a href="%s">тут</a>.';
 $Definition['You can place files in your /uploads folder.'] = 'Если ваш файл слишком велик чтобы загружать его на прямую - залейте его в папку /uploads . Затем вы можете начать <b>экспорт</b> в одно из этих расширений: <b>.txt, .gz</b>.';
 $Definition['You cannot edit the thumbnail of an externally linked profile picture.'] = 'Вы не можете редактировать изображение в прифиле';
-$Definition['You do not have any conversations.'] = 'Вы не начали ниодного разговора';
+$Definition['You do not have any conversations.'] = 'Вы не начали разговоры';
 $Definition['You do not have any notifications yet.'] = 'Для вас нет никаких уведомлений';
 $Definition['You have %s invitations left for this month.'] = 'Du hast diesen Monat noch %s Einladungen ubrig.';
 $Definition['You must agree to the terms of service.'] = 'Вы должны согласиться с условиями использования.';
@@ -834,7 +834,7 @@ $Definition['Your changes have been saved.'] = 'Ваши изменения со
 $Definition['Your default locale won\'t display properly'] = 'Ваше местоположение по умолчанию не отображается правильно, пока не изменено. Пожалуйста, выберите его: %s.';
 $Definition['Your preferences have been saved.'] = 'Ваши настройки были сохраненены.';
 $Definition['Your settings have been saved.'] = 'Ваши настройки были сохраненены.';
-$Definition['You do not have any drafts.'] = 'У вас нет ниодного черновика.';
+$Definition['You do not have any drafts.'] = 'У вас нет черновиков.';
 
 // Кто в сети?
 $Definition['Who\'s Online'] = 'Кто сейчас на сайте?';
