@@ -191,7 +191,7 @@ $Definition['Current Authenticator'] = 'Актуальный Authentifizierungs-
 $Definition['Current Theme'] = 'Используемая тема';
 $Definition['Customize your Public Profile'] = 'Изменение вашего профиля';
 
-$Definition['Dashboard'] = 'Консоль';
+$Definition['Dashboard'] = 'Админка';
 $Definition['Dashboard Summaries'] = '<b>Панель</b>. Основная информация';
 $Definition['Database Structure Upgrades'] = 'Обновление структуры базы данных';
 $Definition['Date.DefaultFormat'] = '%h %i, %Y, %H:%M';
@@ -413,7 +413,7 @@ $Definition['Import'] = 'Импорт';
 $Definition['Importing to Vanilla'] = 'Импортировать в Vanill\'u';
 $Definition['In this Conversation'] = 'Пользователи';
 $Definition['In this Discussion'] = 'В этом теме:';
-$Definition['Inbox'] = 'Диалоги';
+$Definition['Inbox'] = 'Личные сообщения';
 $Definition['Information'] = 'Информация';
 $Definition['Internal'] = 'Внутренний [?]';
 $Definition['Internaltionalization & Localization'] = 'Интернационализация и локализация';
@@ -970,6 +970,14 @@ $Definition['Recent Discussions'] = 'Последние обсуждения';
 $Definition['New Discussion'] = 'Новое обсуждение';
 $Definition['Add a Message'] = 'Добавить сообщение';
 $Definition['Add a Message'] = 'Добавить сообщение';
+
+
+$Definition['%s new plural'] = '%s новых';
+$Definition['%s new'] = '%s новый';
+$Definition['%s new comment since you last read this.'] = 'появился %s новый комментарий после вашего последнего просмотра';
+$Definition['%s new comments since you last read this.'] = 'появилось %s новых комментариев после вашего последнего просмотра';
+
+
 
 
 

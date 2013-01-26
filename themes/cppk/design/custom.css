@@ -1,0 +1,119 @@
+
+#top {
+    background: url("images/back_top.png") repeat-x scroll center center transparent;
+    height: 180px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#top_left {
+    background: url("images/back_top_left.png") no-repeat scroll left center transparent;
+    bottom: 0;
+    height: 132px;
+    left: 0;
+    position: absolute;
+    width: 486px;
+}
+
+
+#top_right {
+    background: url("images/back_top_right.png") no-repeat scroll right center transparent;
+    bottom: 0;
+    height: 132px;
+    position: absolute;
+    right: 0;
+    width: 486px;
+}
+
+#top_inside {
+    background: url("images/back_top_inside.png") repeat scroll 0 0 transparent;
+    height: 145px;
+    margin: -4px auto auto;
+    position: relative;
+    top: 13px;
+    width: 1043px;
+}
+
+#top_inside_left {
+    background: url("images/back_top_inside_left.png") no-repeat scroll center center transparent;
+    float: left;
+    height: 124px;
+    left: 30px;
+    position: absolute;
+    top: 10px;
+    width: 782px;
+}
+
+#top_inside_right {
+    float: right;
+    height: 145px;
+    text-align: left;
+    width: 215px;
+    color: white;
+    padding-top: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url("images/back_body.png") repeat
+}
+
+#Body {
+    text-align: left;
+}
+
+
+#Head {
+    background: url("images/menu_side.png") repeat-x scroll 0 0 transparent;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.SiteMenu li {
+   background: url("images/menu_border.png") no-repeat scroll center center transparent;
+    display: table;
+    float: left;
+    height: 26px;
+    position: relative;
+    text-align: center;
+    width: 105pt;
+}
+
+body > #Frame > .Head {
+    padding: 0px;
+}
+
+#Body .Row {
+  background-color: white;
+    padding: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5), 2px 0 5px rgba(0, 0, 0, 0.5);;
+}
+
+#footer {
+    background: url("images/footer_back.png") repeat-x scroll center center transparent;
+    height: 60px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#footer_inside {
+    margin: 0 auto;
+    text-align: left;
+    width: 1040px;
+}
+#Body .ContentColumn {
+    min-height: 500px;
+}
+
+.HasNew {
+    background: none repeat scroll 0 0 lightblue
+}
