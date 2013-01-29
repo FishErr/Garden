@@ -8,13 +8,15 @@
        <div id="top">
            <div id="top_left"></div>
            <div id="top_right"></div>
-           <div id="top_inside">
-               <div id="top_inside_left"></div>
-               <div id="top_inside_right">
-                   E-platform<br>Разная информация по платформе
+           <a href="/">
+               <div id="top_inside">
+                   <div id="top_inside_left"></div>
+                   <div id="top_inside_right">
+                       E-platform<br>Разная информация по платформе
 
+                   </div>
                </div>
-           </div>
+           </a>
        </div>
 
 
@@ -29,8 +31,10 @@
                <!--{activity_link}-->
                 {inbox_link}
                <!--{custom_menu}-->
-                {profile_link}
-               {signinout_link}
+                <li>
+                {profile_link wrap=span}
+               {signinout_link wrap=''}
+                </li>
             </ul>
          </div>
       </div>
