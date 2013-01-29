@@ -47,12 +47,14 @@
 }
 
 #top_inside_right {
+    color: white;
     float: right;
+    font-size: 23px;
     height: 145px;
+    line-height: 27px;
+    padding-top: 11px;
     text-align: left;
     width: 215px;
-    color: white;
-    padding-top: 50px;
 }
 
 body {

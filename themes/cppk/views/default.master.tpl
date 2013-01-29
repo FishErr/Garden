@@ -12,7 +12,7 @@
                <div id="top_inside">
                    <div id="top_inside_left"></div>
                    <div id="top_inside_right">
-                       E-platform<br>Разная информация по платформе
+                       ЭЛЕКТРОННАЯ ПЛАТФОРМА КРЫМСКОГО ЦЕНТРА
 
                    </div>
                </div>
@@ -32,7 +32,7 @@
                 {inbox_link}
                <!--{custom_menu}-->
                 <li>
-                {profile_link wrap=span}
+                <!--{profile_link wrap=span}-->
                {signinout_link wrap=''}
                 </li>
             </ul>
