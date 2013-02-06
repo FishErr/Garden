@@ -48,12 +48,12 @@
             echo $this->Form->RadioList('Gender', $this->GenderOptions, array('default' => 'u'))
          ?>
       </li>
-      <li>
+ <? /*     <li>
          <?php
             echo $this->Form->Label('Why do you want to join?', 'DiscoveryText');
             echo $this->Form->TextBox('DiscoveryText', array('MultiLine' => TRUE, 'Wrap' => TRUE));
          ?>
-      </li>
+      </li> */ ?>
       <?php $this->FireEvent('RegisterBeforeTerms'); ?>
       <li>
          <?php
