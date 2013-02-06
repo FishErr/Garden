@@ -20,6 +20,7 @@ if (Gdn::Config('Garden.Profile.ShowAbout')) {
          <dd class="Email" itemprop="email">'.Gdn_Format::Email($this->User->Email).'</dd>';
       }
       ?>
+       <br>
       <dt class="Joined"><?php echo T('Joined'); ?></dt>
       <dd class="Joined"><?php echo Gdn_Format::Date($this->User->DateFirstVisit, 'html'); ?></dd>
       <dt class="Visits"><?php echo T('Visits'); ?></dt>
@@ -39,6 +40,7 @@ if (Gdn::Config('Garden.Profile.ShowAbout')) {
             echo htmlspecialchars(implode(', ', ConsolidateArrayValuesByKey($this->Roles, 'Name'))); 
       
       ?></dd>
+       <br>
       <?php if ($Points = GetValueR('User.Points', $this, 0)) : // Only show positive point totals ?>
       <dt class="Points"><?php echo T('Points'); ?></dt>
       <dd class="Points"><?php echo number_format($Points); ?></dd>
