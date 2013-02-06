@@ -26,7 +26,8 @@ if (Gdn::Config('Garden.Profile.ShowAbout')) {
       <dd class="Visits"><?php echo number_format($this->User->CountVisits); ?></dd>
       <dt class="LastActive"><?php echo T('Last Active'); ?></dt>
       <dd class="LastActive"><?php echo Gdn_Format::Date($this->User->DateLastActive, 'html'); ?></dd>
-      <dt class="Roles"><?php echo T('Roles'); ?></dt>
+      <br>
+       <dt class="Roles"><?php echo T('Roles'); ?></dt>
       <dd class="Roles"><?php 
          if (Gdn::Session()->CheckPermission('Garden.Moderation.Manage')) {
             echo UserVerified($this->User).', ';

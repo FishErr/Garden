@@ -111,7 +111,14 @@ body > #Frame > .Head {
     margin: 0 auto;
     text-align: left;
     width: 1040px;
+    color: #ffffff;
+    position: relative;
 }
+#footer_inside .top-right{
+    position: absolute;
+    right: 0;
+}
+
 #Body .ContentColumn {
     min-height: 500px;
 }
