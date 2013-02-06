@@ -68,6 +68,7 @@ if (Gdn::Config('Garden.Profile.ShowAbout')) {
             <dd class="Invited">'.UserAnchor($Inviter).'</dd>';
          }
       }
+       echo '<br>';
       $this->FireEvent('OnBasicInfo');
       ?>
    </dl>
